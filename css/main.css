@@ -1,9 +1,37 @@
 @charset "UTF-8";
 
-body {font-family: 'Open Sans', sans-serif;}
-
-nav {width: 100%; height: 30px; position: fixed; top: 0px; background: #fff; z-index: 10;}
-nav ul {margin: 0; padding: 0;}
-nav ul li {display: inline-block;}
+body {font-family: 'Open Sans', sans-serif; color: #fff; font-weight: 300;}
 
 section {padding: 0 20px;}
+a {color: #fff; text-decoration: underline; opacity: 0.8;  -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out;}
+a:hover {opacity: 1;}
+h1, h2 {font-weight: 700;}
+
+nav {width: 100%; height: 30px; position: fixed; top: 0px; background: #333; z-index: 10; padding: 0 20px;}
+nav ul {margin: 0; padding: 0; font-size: 0px;}
+nav ul li {display: inline-block; font-size: 16px; line-height: 22px;}
+nav ul li:first-child {margin-right: 10px; font-weight: 700;}
+nav ul li a {text-decoration: none; display: block; padding: 4px 10px; }
+nav ul li a:hover, nav ul li.active a {background: #fff;  color: #333;}
+#section0, #section2, #section4, body {
+	background: #3f4c6b;
+	background: -moz-linear-gradient(top,  #3f4c6b 0%, #2b303b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4c6b), color-stop(100%,#2b303b));
+	background: -webkit-linear-gradient(top,  #3f4c6b 0%,#2b303b 100%);
+	background: -o-linear-gradient(top,  #3f4c6b 0%,#2b303b 100%);
+	background: -ms-linear-gradient(top,  #3f4c6b 0%,#2b303b 100%);
+	background: linear-gradient(to bottom,  #3f4c6b 0%,#2b303b 100%);
+}
+#section1, #section3 {
+	background: #2b303b;
+	background: -moz-linear-gradient(top,  #2b303b 0%, #3f4c6b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b303b), color-stop(100%,#3f4c6b));
+	background: -webkit-linear-gradient(top,  #2b303b 0%,#3f4c6b 100%);
+	background: -o-linear-gradient(top,  #2b303b 0%,#3f4c6b 100%);
+	background: -ms-linear-gradient(top,  #2b303b 0%,#3f4c6b 100%);
+	background: linear-gradient(to bottom,  #2b303b 0%,#3f4c6b 100%);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: #fff;
+}
